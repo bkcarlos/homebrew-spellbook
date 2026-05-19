@@ -1,7 +1,7 @@
 class Spellbook < Formula
   desc "Local-first command vault — your spellbook of shell incantations"
   homepage "https://github.com/bkcarlos/spellbook"
-  version "0.1.4"
+  version "0.1.6"
   license "MIT"
 
   # ---------------------------------------------------------------------------
@@ -13,16 +13,16 @@ class Spellbook < Formula
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/bkcarlos/spellbook/releases/download/v#{version}/spellbook-aarch64-apple-darwin.tar.gz"
-      sha256 "93168c69cb9baa648a1da5a258803673940edbc36e77bed00956b8cdd0745dac"
+      sha256 "197a45f9664f8477f1ccb49a963ecf4cc86c5114869716226589ebdf3b493f36"
     else
       url "https://github.com/bkcarlos/spellbook/releases/download/v#{version}/spellbook-x86_64-apple-darwin.tar.gz"
-      sha256 "b1fedfd8b4cfdcc98719f5064b6c037d935319c40996469dd0c092db99dd376c"
+      sha256 "57ec409248289df05a48a2793a1914edd2044d5c50f56b15d87762541e212f8c"
     end
   end
 
   on_linux do
     url "https://github.com/bkcarlos/spellbook/releases/download/v#{version}/spellbook-x86_64-unknown-linux-gnu.tar.gz"
-    sha256 "5a41363c07538af307b056f8c95b18117158471191e5e956f05c67973b076779"
+    sha256 "e8810987270025e953a0e3c63566783d4414966f9a9e139dccc8934e342ca6ec"
   end
 
   def install
