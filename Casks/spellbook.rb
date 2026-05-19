@@ -1,6 +1,6 @@
 cask "spellbook" do
-  version "0.1.3"
-  sha256 "51e1575473ce10c450fc6c1da1eb4834320a04d8e8697147077e540352f708cd"
+  version "0.1.4"
+  sha256 "b329d18c3c013dc5ef04077dcc20eaf45026774276d29010749b230523582e48"
 
   url "https://github.com/bkcarlos/spellbook/releases/download/v#{version}/Spellbook-#{version}.dmg"
   name "Spellbook"
